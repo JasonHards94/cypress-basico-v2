@@ -157,7 +157,7 @@ describe('Central de Atendimento ao Cliente TAT', function () {
         cy.get('#privacy a').should('removeAttr', 'target').click()
         cy.contains('Talking About Testing').should('be.visible')
     });
-    it.only('testa a página da política de privacidade de forma independente', () => {
+    it('testa a página da política de privacidade de forma independente', () => {
         cy.visit('./src/privacy.html')
         cy.contains('Talking About Testing').should('be.visible')
     });
